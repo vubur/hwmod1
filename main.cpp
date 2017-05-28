@@ -5,7 +5,7 @@
  * the syllabus regarding plagiarized code.
  */
 
-// The goal of this application is to calculate gross and net box office profit for a one day time period
+// This application calculates gross and net box office profit for a theater.
 #include <iostream>
 #include <string>
 #include <iomanip>
@@ -22,13 +22,13 @@ int main()
     //Stores values of adult tickets sold
     int adultTicket = 12;
     int totalAdultSales;
-    cout << "How many adult tickets sold:" << endl;
+    cout << "How many Adult tickets sold:" << endl;
     cin >> totalAdultSales;
 
     //Stores value of child tickets sold
     int childTicket = 9;
     int totalChildSales;
-    cout << "How many child tickets sold:" << endl;
+    cout << "How many Child tickets sold:" << endl;
     cin >> totalChildSales;
 
     //Prints movie title with quotes
