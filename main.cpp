@@ -36,10 +36,10 @@ int main()
     cout << "Movie Name:" << setw(30) << right << addPar <<endl;
 
     //Prints total adult ticket sales
-    cout << "Total Adult tickets sold:" << setw(12) << setprecision(2) << fixed << totalAdultSales << endl;
+    cout << "Adult tickets sold:" << setw(12) << setprecision(2) << fixed << totalAdultSales << endl;
 
     // Displays total amount of child tickets sold
-    cout << "Total Child tickets sold:" << setw(12) << totalChildSales << endl;
+    cout << "Child tickets sold:" << setw(12) << totalChildSales << endl;
 
     //Displays and calculates gross profit
     double grossCal = (adultTicket * totalAdultSales) + (childTicket * totalChildSales);
