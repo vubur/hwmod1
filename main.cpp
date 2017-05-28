@@ -13,7 +13,6 @@ using namespace std;
 
 int main()
 {
-
     // Stores the movie title
     string movieName;
     cout << "What is the movie name:" <<endl;
@@ -57,6 +56,4 @@ int main()
     cout << "Press enter to continue:";
     cin.get(pause);
     return 0;
-
-
 }
