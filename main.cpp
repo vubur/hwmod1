@@ -9,7 +9,15 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
-using namespace std;
+using std::cout;
+using std::endl;
+using std::cin;
+using std::showpoint;
+using std::fixed;
+using std::setprecision;
+using std::string;
+using std::right;
+using std::setw;
 
 int main()
 {
