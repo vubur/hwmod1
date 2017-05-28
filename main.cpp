@@ -57,11 +57,11 @@ int main()
     cout << "Net Box Office Profit:" << setw(10) << showpoint << "$ " << netCal<< endl;
 
     // Prints amount paid to Dist
-    cout << "Amount Paid to Distributor:" << setw(5) << showpoint << "$ " << grossCal - netCal << endl;
+    cout << "Amount Paid to Distributor:" << setw(5) << showpoint << "$ " << grossCal - netCal << endl << endl;
 
     // Pauses screen for viewing
     char pause = cin.get();
-    cout << "Press enter to continue:";
+    cout << "Press enter to continue: ";
     cin.get(pause);
     return 0;
 }
