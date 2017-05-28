@@ -50,14 +50,14 @@ int main()
 
     // Prints and calculates gross profit
     double grossCal = (adultTicket * totalAdultSales) + (childTicket * totalChildSales);
-    cout << "Gross Box Office Profit:" << setw(10) << showpoint << "$ " << grossCal << endl;
+    cout << "Gross Box Office Profit:" << setw(8) << showpoint << "$ " << grossCal << endl;
 
     // Prints and calculates net profit
     double netCal = grossCal *0.22;
-    cout << "Net Box Office Profit:" << setw(12) << showpoint << "$ " << netCal<< endl;
+    cout << "Net Box Office Profit:" << setw(10) << showpoint << "$ " << netCal<< endl;
 
     // Prints amount paid to Dist
-    cout << "Amount Paid to Distributor:" << setw(7) << showpoint << "$ " << grossCal - netCal << endl;
+    cout << "Amount Paid to Distributor:" << setw(5) << showpoint << "$ " << grossCal - netCal << endl;
 
     // Pauses screen for viewing
     char pause = cin.get();
