@@ -26,13 +26,13 @@ int main()
     cout << "What is the movie name:" <<endl;
     getline(cin, movieName);
 
-    // Stores values of adult tickets sold
+    // Stores values of adult tickets
     int adultTicket = 12;
     int totalAdultSales;
     cout << "How many Adult tickets sold:" << endl;
     cin >> totalAdultSales;
 
-    // Stores value of child tickets sold
+    // Stores value of child tickets
     int childTicket = 9;
     int totalChildSales;
     cout << "How many Child tickets sold:" << endl;
@@ -42,21 +42,21 @@ int main()
     string addPar = "\"" + movieName + "\"";
     cout << "Movie Name:" << setw(30) << right << addPar <<endl;
 
-    // Prints total adult ticket sales
+    // Prints adult ticket sales
     cout << "Adult Tickets Sold:" << setw(12) << setprecision(2) << fixed << totalAdultSales << endl;
 
-    // Displays total amount of child tickets sold
+    // Prints child ticket sales
     cout << "Child Tickets Sold:" << setw(12) << totalChildSales << endl;
 
-    // Displays and calculates gross profit
+    // Prints and calculates gross profit
     double grossCal = (adultTicket * totalAdultSales) + (childTicket * totalChildSales);
     cout << "Gross Box Office Profit:" << setw(10) << showpoint << "$ " << grossCal << endl;
 
-    // Displays and calculates net profit
+    // Prints and calculates net profit
     double netCal = grossCal *0.22;
     cout << "Net Box Office Profit:" << setw(12) << showpoint << "$ " << netCal<< endl;
 
-    // Displays amount paid to Dist
+    // Prints amount paid to Dist
     cout << "Amount Paid to Distributor:" << setw(7) << showpoint << "$ " << grossCal - netCal << endl;
 
     // Pauses screen for viewing
