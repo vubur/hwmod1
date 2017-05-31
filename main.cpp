@@ -19,8 +19,7 @@ using std::string;
 using std::right;
 using std::setw;
 
-int main()
-{
+int main()  {
     // Stores the movie title
     string movieName;
     cout << "What is the movie name:" <<endl;
@@ -43,21 +42,26 @@ int main()
     cout << "Movie Name:" << setw(30) << right << addPar <<endl;
 
     // Prints adult ticket sales
-    cout << "Adult Tickets Sold:" << setw(12) << setprecision(2) << fixed << totalAdultSales << endl;
+    cout << "Adult Tickets Sold:" << setw(12) << setprecision(2)
+         << fixed << totalAdultSales << endl;
 
     // Prints child ticket sales
     cout << "Child Tickets Sold:" << setw(12) << totalChildSales << endl;
 
     // Prints and calculates gross profit
-    double grossCal = (adultTicket * totalAdultSales) + (childTicket * totalChildSales);
-    cout << "Gross Box Office Profit:" << setw(8) << showpoint << "$ " << grossCal << endl;
+    double grossCal = (adultTicket * totalAdultSales)
+                      + (childTicket * totalChildSales);
+    cout << "Gross Box Office Profit:" << setw(8) << showpoint
+         << "$ " << grossCal << endl;
 
     // Prints and calculates net profit
     double netCal = grossCal *0.22;
-    cout << "Net Box Office Profit:" << setw(10) << showpoint << "$ " << netCal<< endl;
+    cout << "Net Box Office Profit:" << setw(10)
+         << showpoint << "$ " << netCal<< endl;
 
     // Prints amount paid to Dist
-    cout << "Amount Paid to Distributor:" << setw(5) << showpoint << "$ " << grossCal - netCal << endl << endl;
+    cout << "Amount Paid to Distributor:" << setw(5) << showpoint << "$ "
+         << grossCal - netCal << endl << endl;
 
     // Pauses screen for viewing
     char pause = cin.get();
